@@ -36,6 +36,7 @@ namespace ProductApps
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
                 totalChargeTextBox.Text = Convert.ToString(cProduct.TotalPayment + 25.00m);
                 totalChargeAferWrapTextBox.Text = Convert.ToString(cProduct.TotalPayment + 25.00m + 5.00m);
+                totalChargeAferGSTTextBox.Text = Convert.ToString((cProduct.TotalPayment + 25.00m + 5.00m)* 1.1m);
             }
             catch (FormatException)
             {
